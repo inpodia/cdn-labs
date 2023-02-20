@@ -1,10 +1,14 @@
-// Ambil nama blog dari URL
-var blogName = window.location.hostname;
-
-// Ganti dengan nama blog Anda yang sesuai
-var validBlogName = "tekno-inpodia.blogspot.com";
-
-// Jika nama blog tidak sama dengan nama blog yang valid, maka redirect ke URL lain
-if (blogName !== validBlogName) {
-  window.location.replace("https://www.inpodia.com");
+var licenseKey = "ABCD-EFGH-IJKL-MNOP";
+function checkLicense(userInput) {
+  if (userInput === licenseKey) {
+    return true;
+  } else {
+    return false;
+  }
+}
+var userInput = prompt("Please enter your license key:");
+if (checkLicense(userInput)) {
+  // Lisensi benar, kode template disertakan di sini
+} else {
+  alert("Invalid license key. Please try again.");
 }
