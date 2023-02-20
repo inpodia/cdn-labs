@@ -1,14 +1,8 @@
-var licenseKey = "ABCD-EFGH-IJKL-MNOP";
-function checkLicense(userInput) {
-  if (userInput === licenseKey) {
+function validateLicense(license) {
+  if (license === licenseKey) {
     return true;
   } else {
     return false;
   }
 }
-var userInput = prompt("Please enter your license key:");
-if (checkLicense(userInput)) {
-  // Lisensi benar, kode template disertakan di sini
-} else {
-  alert("Invalid license key. Please try again.");
-}
+var licenseKey = "ABCD-EFGH-IJKL-MNOP";
